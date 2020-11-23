@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>HTML5 TEMPLATE (W3C)</title>
+	<link rel="apple-touch-icon" href="assets/img/favicon/apple-touch-icon.png">
+	<link href="assets/img/favicon/favicon.ico" rel="icon" type="image/x-icon" />
+	<link rel="stylesheet" type="text/css" href="/styles.css">
+	<script src="main.js" defer></script>
+</head>
+
+<body>
+	<header>
+		<nav>
+			<div class="navContainer">
+				<div id="navTitle">
+					<a href="index.html">
+						<img class="logo" src="assets/img/logo.svg" alt="Our-Logo">
+					</a>
+					HTML5 TEMPLATE
+				</div>
+				<ul>
+					<li><a href="index.html" class="activ">Home</a></li>
+					<li><a href="html/news.html">News</a></li>
+					<li><a href="html/about.html">About</a></li>
+					<li><a href="html/contact.html">Contact</a></li>
+				</ul>
+			</div>
+		</nav>
+		<div class="banner">
+			<p>BANNER</p>
+		</div>
+	</header>
+
+	<main>
+		<section id="mainSection">
+			<h1>HOME TITLE <em>(H1)</em></h1>
+			<p>Responsiv templates web pages with various contents for tests <em>(HTML 100% W3C conform)</em>.</p>
+			<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Qui nihil odit cumque modi quibusdam doloremque
+				animi rem sequi officiis, vero unde velit ratione saepe ducimus iste fuga cupiditate laudantium aliquid.
+			</p>
+			<article>
+				<h2>&#x1F4F7; &nbsp; Titre de niveau H2</h2>
+				<p>Exemple de <strong>contenu image</strong> <em>(png/jpg)</em>...</p>
+				<img src="assets/img/img1.png" alt="exemple-1">
+			</article>
+			<article>
+				<h3>&#x1F50A; &nbsp; Titre de niveau H3</h3>
+				<p>Exemple de <strong>contenu audio</strong> <em>(ogg/mp3)</em>...</p>
+				<audio src="assets/audio/sound1.mp3" controls></audio>
+			</article>
+			<article>
+				<h4>&#x1F3AC; &nbsp; Titre de niveau H4</h4>
+				<p>Exemple de <strong>contenu vidéo</strong> <em>(webm/mp4)</em>...</p>
+				<video controls poster="assets/img/video1.jpg" autoplay muted>
+					<source src="assets/video/video1.mp4" type="video/mp4">
+
+					<!-- fallback pour les navigateurs qui ne supportent pas mp4 -->
+					<source src="assets/video/video1.webm" type="video/webm">
+
+					<!-- spécifie les fichiers de sous-titres -->
+					<track src="subtitles_en.vtt" kind="subtitles" srclang="en" label="English">
+					<track src="subtitles_no.vtt" kind="subtitles" srclang="no" label="Norwegian">
+
+					<!-- fallback pour les navigateurs qui ne supportent pas la balise video -->
+					<a href="assets/video/video1.mp4">download video</a>
+				</video>
+			</article>
+		</section> <!-- end of mainSection -->
+
+		<aside>
+			<div class="asideContainer">
+				<h1>ASIDE</h1>
+				<nav>
+					<ul>
+						<li><a href="html/news.html">News</a></li>
+						<li><a href="html/about.html">About</a></li>
+						<li><a href="html/contact.html">Contact</a></li>
+						<li><a href="#top">Top Page</a></li>
+						<li><a href="#mainSection">Main Section</a></li>
+					</ul>
+				</nav>
+			</div>
+		</aside>
+	</main>
+
+	<footer>
+		<p>&copy; Copyright 2020 <em>(HTML 100% conform W3C | checked by <a
+					href="https://validator.w3.org/nu/#textarea" target="_blank">validator-w3c.org</a> )</em></p>
+	</footer>
+
+</body>
+
+</html>

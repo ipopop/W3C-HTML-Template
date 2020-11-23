@@ -1,0 +1,65 @@
+/* :root {
+    --main-txt-color: hsl(220, 30%, 20%, .8);
+    --activ-txt-color: rgba(0, 124, 133, 0.8);
+} */
+
+main {
+    display: block;
+}
+
+h2 {
+    font-family: 'BauerBodoniW01-BoldDisp', georgia, serif;
+    font-size: 4rem;
+    color: var(--activ-txt-color);
+    margin: 0;
+    line-height: 1.1em;
+}
+
+p {
+    line-height: 1.75em;
+}
+
+h1, h2, h3, p {
+    margin-left: 20vw; 
+}
+
+.banner p, footer p {
+    margin-left: 0;
+}
+
+.articlesImg {
+    width: 100%;
+}
+
+.articlesImg {
+    width: 36vw;
+    float: left;
+    margin: 1em;
+}
+
+img.grapes {
+    width: 50vw;
+    shape-outside: polygon(70.25% 83.08%, 45.5% 94.3%, 0% 100%, 0% 88.4%, 0% 23.7%, 38.7% 11.35%, 55% 11.1%, 63.5% 22.7%, 75.15% 21.19%, 78.95% 29.51%, 82.65% 35.2%, 85.95% 45.92%, 81.45% 57.74%, 89.15% 65.7%, 92.55% 72.1%, 89.8% 79.92%);
+    float: left;
+}
+
+img.apples {
+    width: 60vw;
+    shape-outside: url("../assets/img/news/apples-mask.png");
+    shape-margin: 0.8em;
+    shape-image-threshold: 0.5;
+}
+
+@media only screen and (max-width: 566px) {
+    h1, h2, h3, p {
+        margin-left: 5vw; 
+    }
+
+    h2 {
+        font-size: 2rem;
+    }
+
+    img.grapes, img.apples {
+        margin-left: -12vw;
+    }
+}

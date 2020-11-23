@@ -1,0 +1,245 @@
+:root {
+    --main-txt-color: hsla(220, 30%, 20%, 0.7);
+    --activ-txt-color: hsla(185, 100%, 25%, 0.7);
+    --main-bg-color: hsl(0, 0%, 97%);
+    --bg-color: hsla(220, 100%, 90%, .85);
+    --bg-color-dark: hsl(220, 30%, 20%);
+    --bg-color-light: hsl(0, 0%, 100%);
+    --lk-bg-color: hsla(220, 30%, 80%, .8);
+    --lk-color:hsla(185, 100%, 25%, 0.7);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'AdobeGaramondW01-Regula', georgia, serif;
+    font-size: 18px;
+    color: var(--main-txt-color);
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--bg-color-dark);
+    color: var(--main-txt-color);
+}
+
+.navContainer,
+.banner,
+main,
+footer {
+    max-width: 800px;
+}
+
+.navContainer,
+.banner,
+aside,
+footer {
+    background-color: var(--bg-color);
+}
+
+.navContainer {
+    width: 100vw;
+    z-index: 2;
+    position: fixed;
+    top: 0;
+}
+
+.navContainer,
+footer,
+.banner,
+aside {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#navTitle {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color: var(--activ-txt-color);
+    font-weight: 900;
+}
+
+.navContainer,
+#mainSection {
+    display: flex;
+}
+
+nav ul {
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+li {
+    list-style: none;
+    margin-right: 15px;
+}
+
+a {
+    text-decoration: none;
+    color: var(--lk-color);
+    cursor: pointer;
+    padding: 3px 3px 1px 3px;
+    border-radius: 3px;
+}
+
+a:hover,
+a.activ {
+    background-color: var(--bg-color-light);
+    color: var(--activ-txt-color);
+}
+
+.banner {
+    margin-top: 45px;
+    width: 100vw;
+    height: auto;
+    max-height: 150px;
+    background: var(--bg-color-dark);
+    background-image: url("assets/img/banner-1.jpg"); 
+    -webkit-background-size: cover; /* pour anciens Chrome et Safari */
+    background-size: cover; /* version standardisée */
+    background-repeat: no-repeat;
+    background-position: center center;
+    opacity:.5;
+    font-size: 2.5rem;
+    color: var(--lk-bg-color);
+    justify-content: center;
+}
+
+.banner p {
+    opacity: 0;
+}
+
+main {
+    z-index: 1;
+    width: 100vw;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    justify-content: center;
+    background-color: var(--main-bg-color);
+}
+
+article {
+    background-color: var(--bg-color-light);
+    padding: 20px;
+    border-radius: 8px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    width: 100%;
+}
+
+#mainSection,
+aside {
+    padding: 35px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+aside {
+    justify-content: flex-start;
+    padding: 15px;
+}
+
+.asideContainer {
+    position: sticky;
+    top: 57px;
+}
+
+aside ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+aside li {
+    margin-bottom: 8px;
+    margin-right: 0;
+}
+
+img,
+audio,
+video {
+    width: 100%;
+    max-width: 500px;
+}
+
+.logo {
+    width: 35px;
+}
+
+footer {
+    justify-content: center;
+    width: 100vw;
+    padding: 8px;
+    text-align: center;
+}
+
+@media only screen and (max-width: 550px) {
+
+    header,
+    main,
+    footer {
+        max-width: 100vw;
+    }
+
+    nav,
+    .banner,
+    #mainSection {
+        width: 100vw;
+    }
+
+    .banner {
+        margin-top: 80px;
+    }
+
+    #mainSection {
+        padding: 16px;
+    }
+
+    aside {
+        display: none;
+    }
+
+    article {
+        margin: auto;
+        padding: 10px;
+    }
+
+    h1 {
+        font-size: 22px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    h3 {
+        font-size: 18px;
+    }
+
+    nav ul {
+        padding-left: 0;
+        margin: 16px auto 10px;
+    }
+
+    nav ul li {
+        padding-bottom: 5px;
+    }
+}
