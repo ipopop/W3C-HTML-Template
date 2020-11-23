@@ -5,8 +5,12 @@
     --bg-color: hsla(220, 100%, 90%, .85);
     --bg-color-dark: hsl(220, 30%, 20%);
     --bg-color-light: hsl(0, 0%, 100%);
+    --bg-color-xtra: rgba(246, 248, 252, 0.1);
+    --bg-color-activ: rgba(246, 248, 252, 0.55);
     --lk-bg-color: hsla(220, 30%, 80%, .8);
     --lk-color:hsla(185, 100%, 25%, 0.7);
+    --box-sh: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.05);
+    --box-sh-hover: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
 }
 
 * {
@@ -91,15 +95,22 @@ li {
 a {
     text-decoration: none;
     color: var(--lk-color);
+    background-color: var(--bg-color-xtra);
     cursor: pointer;
     padding: 3px 3px 1px 3px;
     border-radius: 3px;
+    box-shadow: var(--box-sh);
 }
 
 a:hover,
 a.activ {
-    background-color: var(--bg-color-light);
+    background-color: var(--bg-color-activ);
     color: var(--activ-txt-color);
+    box-shadow: var(--box-sh-hover);
+}
+
+a:hover {
+    background-color: var(--bg-color-light);
 }
 
 .banner {
@@ -139,6 +150,11 @@ article {
     margin-top: 25px;
     margin-bottom: 25px;
     width: 100%;
+    box-shadow: var(--box-sh);
+}
+
+article:hover {
+    box-shadow: var(--box-sh-hover);
 }
 
 #mainSection,
