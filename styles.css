@@ -21,6 +21,7 @@ html {
     font-family: 'AdobeGaramondW01-Regula', georgia, serif;
     font-size: 18px;
     color: var(--main-txt-color);
+    scroll-behavior: smooth;
 }
 
 body {
@@ -100,6 +101,9 @@ a {
     padding: 3px 3px 1px 3px;
     border-radius: 3px;
     box-shadow: var(--box-sh);
+    transition-duration: 500ms;
+    transition-timing-function: cubic-bezier(0, 0, 0.2, 1);
+    transition-property: background-color, border-color, color, fill, stroke, opacity, box-shadow, transform;
 }
 
 a:hover,
